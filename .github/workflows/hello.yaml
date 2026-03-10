@@ -12,4 +12,8 @@ jobs:
         run: echo "say hello dosto"
       - name: hello to user
         run: echo "shello $USER"
-  
+  details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: what is name of docker pythons
+        run: docker --version && python --version
